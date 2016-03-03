@@ -14,7 +14,7 @@
     }
 
 
-    .snap-bottom {
+.snap-bottom {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -31,36 +31,7 @@
   margin-top: 15px;
 }
 
-
-
-.form-container .dp-table-cell {
-  padding-right: 5px;
-}
-.form-container .dp-table-cell + .dp-table-cell {
-  padding-right: 0;
-  padding-left: 5px;
-}
-.form-container .form-control {
-  font-family: "arial", tahoma;
-  line-height: 1.3em;
-  font-size: 14px;
-  line-height: 32px;
-}
-.form-container label {
-  font-weight: 100;
-}
-@media (min-width: 1200px) {
-  .form-container .form-group {
-    margin-top: 25px;
-  }
-  .form-container .form-control {
-    height: 40px;
-    line-height: 1em;
-    font-weight: 100;
-    padding-top: 3px;
-  }
-}
-
+ 
 
     </style>
 </asp:Content>
@@ -188,12 +159,10 @@
 				</section>
                  
                    
-                <div class="col-sm-12">  
-                    <div id="pt"></div> 
-	                    <div class="form-group btnsubmit submit-btn snap-bottom" style="display:">
+                <div class="col-sm-12">   
+	                    <div class="btnsubmit submit-btn snap-bottom">
 		                    <div class="container">
-			                    <a class="button-ui button-green" id='btnSubmit'>เลือกแผนนี้</a>
-			                    <p class="freeText">สมัครวันนี้ <span class="red">ฟรี e-Voucher</span> ส่วนลดที่พักและสปา</p>
+			                    <a class="button-ui button-green" id='btnSubmit'>เลือกแผนนี้</a> 
 		                    </div>
 	                    </div>
                  </div> 
@@ -253,23 +222,23 @@
                 autoWidth: true
          }); 
                
-        function isElementInViewport() {
-            var scrollTop = $(window).scrollTop();
-            var viewportHeight = $(window).height();
-            $('#pt').each(function () {
-                var top = $(this).offset().top;
-                console.log(top);
-                console.log(scrollTop + viewportHeight);
-                if (scrollTop + viewportHeight >= top) {
-                    $('.submit-btn').addClass('non-snap');
-                   console.log(true);
-                } else {
-                    $('.submit-btn').removeClass('non-snap');
-                    console.log(false);
-                }
-            });
-        }
-        $(window).scroll(isElementInViewport);
+//        function isElementInViewport() {
+//            var scrollTop = $(window).scrollTop();
+//            var viewportHeight = $(window).height();
+//            $('#pt').each(function () {
+//                var top = $(this).offset().top;
+//                console.log(top);
+//                console.log(scrollTop + viewportHeight);
+//                if (scrollTop + viewportHeight >= top) {
+//                    $('.submit-btn').addClass('non-snap');
+//                   console.log(true);
+//                } else {
+//                    $('.submit-btn').removeClass('non-snap');
+//                    console.log(false);
+//                }
+//            });
+//        }
+//        $(window).scroll(isElementInViewport);
    
 
     </script> 
